@@ -1,0 +1,9 @@
+all:
+  children:
+    test:
+      hosts:
+          34.105.246.41
+      vars:
+        ansible_user: aadilmoghal
+        ansible_ssh_private_key_file: '~/.ssh/ansible_id_rsa'
+        ansible_ssh_common_args: '-o StrictHostKeyChecking=no
